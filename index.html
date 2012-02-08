@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Javascript-Carousel-WEB by RocKdrigo Satch - rocKdrigo.INFO</title>
+<!-- Libreria jQuery -->
+<script type="text/javascript" src="jquery.min.js"></script>
+<!-- RocKdrigoDOTinfoCarousel JavaScript -->
+<script type="text/JavaScript" src="rock-carousel.js"></script>
+<script type="text/JavaScript" src="mousewheel.js"></script>
+<!-- RocKdrigoDOTinfoCarousel JavaScript FUNCIÓN -->
+<script>
+$(document).ready(function(){
+// Esto inicializa el carrusel sobre los elementos contenedor especificado, en este caso, 'rockdrigo-carousel'.
+    $("#rockdrigo-carousel").RocKdrigoDOTinfoCarousel(
+        {
+            xPos: 440,
+            yPos: 100,
+            buttonLeft: $("#left-but"),
+            buttonRight: $("#right-but"),
+            altBox: $("#alt-text"),
+            titleBox: $("#title-text"),
+            autoRotate: 'right',
+            speed: 0.3,
+            autoRotateDelay: 1100,
+            mouseWheel: true,
+            bringToFront: true,
+            minScale: 0.3,
+            xRadius: 430,
+            yRadius: 40,
+        }
+    );
+});
+</script>
+</head>
+<body>
+    <!-- RocKdrigoDOTinfoCarousel -->
+    <div class="sb_box" >
+        <h3>Javascript-Carousel-WEB by RocKdrigo Satch - rocKdrigo.INFO</h3>
+    </div>
+        <!-- Todas las imagenes con la clase "rockdrigo-carousel" se convertiran en objetos del carusel -->
+        <!-- You can place links around these images -->
+        <!-- Contenedor del carousel. -->
+        <div id="rockdrigo-carousel" style="width:900px; height:330px; background:#A3DC12; overflow:auto;">
+            <img class = "rockdrigo-carousel" src="images/img1.png" title="Titulo Cisco" alt="Cisco" width="150" height="91"/>
+            <img class = "rockdrigo-carousel" src="images/img2.png" title="Titulo Dell" alt="Dell" width="150" height="64"/>
+            <img class = "rockdrigo-carousel" src="images/img3.png" title="Titulo EMC" alt="EMC" width="250" height="111"/>
+            <img class = "rockdrigo-carousel" src="images/img4.png" title="Titulo HP" alt="HP" width="150" height="67"/>
+            <img class = "rockdrigo-carousel" src="images/img5.png" title="Titulo IBM" alt="IBM" width="150" height="88"/>
+            <img class = "rockdrigo-carousel" src="images/img6.png" title="Titulo Citrix" alt="Citrix" width="200" height="107"/>
+            <img class = "rockdrigo-carousel" src="images/img7.png" title="Titulo VMWare" alt="VMWare" width="150" height="110"/>
+            <img class = "rockdrigo-carousel" src="images/img8.png" title="Titulo Microsoft" alt="Microsoft" width="150" height="71"/>
+            <img class = "rockdrigo-carousel" src="images/img9.png" title="Titulo RedHat" alt="RedHat" width="200" height="72"/>
+            <img class = "rockdrigo-carousel" src="images/img10.png" title="Titulo Riverbed" alt="Riverbed" width="150" height="110"/>
+            <img class = "rockdrigo-carousel" src="images/img11.png" title="Titulo SAP" alt="SAP" width="150" height="78"/>
+        </div>
+
+        <!-- Agrega botones para mover las imagenes con click. -->
+        <input id="left-but"  type="button" value="Left" />
+        <input id="right-but" type="button" value="Right" />
+
+        <!-- Aqui podemos mostrar el texto de cada imagen al pararnos en ella. -->
+        <p id="title-text"></p>
+        <p id="alt-text"></p>
+
+
+
+
+
+        Copyright © 2011 <a href="http://www.rockdrigo.info/">RocKdrigo.INFO</a> | Developed by <a href="https://github.com/rockdrigo" target="_blank">RocKdrigo Satch</a>
+
+
+</body>
+</html>
